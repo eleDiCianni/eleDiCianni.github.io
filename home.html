@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eleonora Di Cianni</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js "></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="home.html" id="logo">ELEONORA DI CIANNI</a>
+            <a  id="icon-hamburger" onclick="openMenu()" ><img  src="images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
+            <a  id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
+            
+            <ul id="menu">
+                <li><a href="#about-me">About me</a></li>
+                <li id="dropdown"><a href="#project" onclick="openDropdown()">Portfolio <img id="icon-dropdown" src="images/open-menu.svg" alt="icona per il menu dropdown"></a> 
+                    <ul id="portfolio-menu">
+                        <li><a href="brand.html">Brand identity</a></li>
+                        <li><a href="copy.html">Copywriting</a></li>
+                        <li><a href="uxui.html">UX/UI design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+        
+        <div id="container-hero">
+            <img id="hero" src="images/hero.jpg" alt="">
+            <span id="scurisci-image">
+                    <h1>ELEONORA DI CIANNI</h1>
+                    <h4>Aspirante UX/UI designer</h4>
+            </span>
+        </div>
+
+        <div id="about-me">
+            <h1>Riguardo me</h1>
+            <div id="intro-me">
+                <img id="image-me" src="images/fotoProfilo.png" alt="">
+                <div>
+                    <p> 
+                        Ho 22 anni e sono di Milano. Ho un background in economia, ma ho lasciato quel percorso con la fine delle scuole superiori per buttarmi nel mondo del web design. <br> <br>
+    
+                        Sto conseguendo il corso di UX/UI design di Start2Impact, con cui mi sto formando su:
+                        <ul>
+                            <li>Copywriting</li>
+                            <li>Basi di grafica</li>
+                            <li>Basi di Html e css</li>
+                            <li>Fase di discovery</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>User testing</li>
+    
+                        </ul>
+                        <br>
+                        Attualmente ho concluso la teoria di tutti gli argomenti e sto procedendo al progetto pratico dell'ultimo.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="skills">
+            <h2>Hard skill</h2>
+            <ul>
+                <li># Wireframing</li>
+                <li># Prototyping</li>
+                <li># User testing</li>
+                <li># Brand identity</li>
+                <li># Figma</li>
+                <li># Axure</li>
+                <li># Illustrator</li>
+                <li># Adobe XD</li>
+                <li># HTML</li>
+                <li># CSS</li>
+                <li># Team working</li>
+            </ul>
+
+            <h2>Soft skill</h2>
+            <ul>
+                <li># Problem solving</li>
+                <li># Capacità di pianificare e organizzare</li>
+            </ul>
+        </div>
+		
+        <div id="project">
+            <div>
+                <a href="brand.html"><img src="images/brand.svg" id="brand" alt="link to the projects of brand identity"></a>
+                <a href="copy.html"><img src="images/copy.svg" id="copy" alt="link to the projects of copywriting"></a>
+                <a href="uxui.html"><img src="images/uiux.svg" id="uxui" alt="link to the projects of Ux/Ui design"></a>
+            </div>
+        </div>
+
+        <div id="contact-me">
+            <div id="form-section">
+                <h1>Contattami</h1>
+                <h4 style="text-align: center;">Vuoi metterti in contatto con me? Compila la seguente form </h4>
+
+                <form id="sendMessage" method="get">
+
+                    <div class="input-form">
+                    <label for="name" class="form-label">Nome</label> <br>
+                    <input type="text" class="form-control" id="name" onchange="textChange('name')">
+                    <p id="empty-name" class="error">Inserire un nome</p>
+                    <p id="wrong-name" class="error">Il nome inserito non è valido</p>
+                    </div>
+
+                    <div class="input-form">
+                        <label for="email" class="form-label">Email</label> <br>
+                        <input type="text" class="form-control" id="email" placeholder="example@gmail.com" onchange="textChange('email')">
+                        <p id="empty-email" class="error">Inserire una email</p>
+                        <p id="wrong-email" class="error">La email inserita non è valida</p>
+                    </div>
+
+
+                    <div class="input-form">
+                        <label for="message" class="form-label">Messaggio</label> <br>
+                        <textarea class="form-control" id="message" placeholder="Lasciami un messaggio ... " onchange="textChange('message')"></textarea>
+                        <p id="empty-message" class="error">Inserire un messaggio</p>
+                    </div>
+
+                    <button class="btn-primary" type="submit" onclick="return send()">INVIA</button>
+                </form>
+            </div>
+            
+            <dialogs id="successMessage">
+                <img src="images/icon-check.png" alt="" style="width: 20%;" >
+                <h4>Il messaggio è stato mandato con successo! </h4>
+                <p>Grazie per avermi contattata. Risponderò al tuo messaggio il prima possibile ^^</p>
+                <button onclick="closeMessage()" class="btn-secondary-green">Chiudi</button>
+            </dialogs>
+        </div>
+
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" ><img src="images/facebook.png" alt="logo Facebook" onmouseover="this.src='images/facebookH.png';" onmouseout="this.src='images/facebook.png';" class="icon-social"></a>
+                <a href="https://www.instagram.com/eleanor_dici/" class="social" ><img src="images/instagram.png" alt="logo Instagram" onmouseover="this.src='images/instagramH.png';" onmouseout="this.src='images/instagram.png';" class="icon-social"></a>
+                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" ><img src="images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='images/linkedinH.png';" onmouseout="this.src='images/linkedin.png';" class="icon-social"></a>
+                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" ><img src="images/github.svg" alt="logo GitHub" onmouseover="this.src='images/githubH.svg';" onmouseout="this.src='images/github.svg';" class="icon-social"></a>                
+            </div>
+            Copyright © 2022 | Eleonora Di Cianni
+        </footer>
+
+    </body>
+	
+</html>

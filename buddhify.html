@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buddhify redesign</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleDetails.css">   
+        <script type="text/javascript" src="script.js "></script>
+
+        <script>
+            // btn turn to index
+
+            window.onscroll = function() { 
+                if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                    document.getElementById("to-index").style.display = "block"
+                } else {
+                    document.getElementById("to-index").style.display = "none"
+                }
+            }
+        </script>
+
+        <style>
+            .content > div > div {
+                margin-top: 80px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="home.html" id="logo" >ELEONORA DI CIANNI</a>
+            <a id="icon-hamburger" onclick="openMenu()" ><img  src="images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
+            <a id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
+            
+            <ul id="menu">
+                <li><a href="home.html#about-me">About me</a></li>
+                <li id="dropdown"><a onclick="openDropdown()" class="fake-link">Portfolio <img id="icon-dropdown" src="images/open-menu.svg" alt="icona per il menu dropdown"></a> 
+                    <ul id="portfolio-menu">
+                        <li><a href="brand.html">Brand identity</a></li>
+                        <li><a href="copy.html">Copywriting</a></li>
+                        <li><a href="uxui.html">UX/UI design</a></li>
+                    </ul>
+                </li>
+                <li><a href="home.html#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <div class="breadcrumb">
+            <a href="uxui.html" class="breadcrumbLink">UX/UI design</a><span> > </span><a href="buddhify.html" class="breadcrumbLink"> Buddhify redesign</a>
+        </div>
+    
+        <img src="images/buddy-logo.png" class="logoAziendale" alt="logo Buddhify">
+    
+        <div class="panoramica">
+            <h2>Panoramica</h2>
+                
+            <div class="panoramica-content">
+                <div>
+                    <h3>L'azienda:</h3>
+                    <p>Buddhify è un'applicazione di meditazione progettata per adattarsi ad uno stile di vita moderno e dinamico. Promuove infatti, la <strong>meditazione in movimento</strong> da poter eseguire ovunque e in qualsiasi momento.</p>
+                </div>
+                    
+                <div>
+                    <h3>Il problema:</h3>
+                    <p>Il sito web attuale presenta una serie di problemi di UX che ho dovuto analizzare. In particolare mi sono occupata delle funzionalità di supporto</p>
+                </div>
+                    
+                <div>
+                    <h3>Il mio ruolo:</h3>
+                    <p>Eseguire un'analisi as is e proporre possibili soluzioni, mostrandole tramite wireframe e prototyping e accertandomi della validità tramite user testing</p>
+                </div>
+
+                <div>
+                    <h3>Strumenti utilizzati:</h3>
+                    <ul>
+                        <li><strong>Figma: </strong> wireframe, design system e icone</li>
+                        <li><strong>Axure:</strong> prototipazione</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="margin-bottom: 8px">Per vedere il progetto completo clicca qui</p>
+                <a href="images/Progetto Buddhify.pdf" target="_blank"><button type="button" class="btn-secondary-green" >Progetto completo</button></a>
+
+            </div>
+        </div>
+
+        <div class="indice" id="index">
+            <div class="indice-title" >
+                <img src="images/icon-index.svg" alt="indice">
+                <h5>INDICE</h5>
+            </div>
+            <ol>
+                <li><a href="#discovery">Discovery</a></li>
+                <ul>
+                    <li><a href="#descrizione-sito">Descrizione del sito</a></li>
+                    <li><a href="#analisi">Analisi as is</a></li>
+                    <li><a href="#competitors"></a>Analisi dei competitors</li>
+                    <li><a href="#target"></a>Analisi del target</li>
+                    <li><a href="#personas">Personas & user journey</a></li>
+                    <li><a href="#soluzioni">Implementazioni</a></li>
+                </ul>
+                <li><a href="#wireframe">Wireframing</a></li>
+                <li><a href="#prototype">Prototyping</a></li>
+                <ul>
+                    <li><a href="#palette">Palette</a></li>
+                    <li><a href="#tipografia">Tipografia</a></li>
+                    <li><a href="#prototipi"></a>Prototipi</li>
+                </ul>
+                <li><a href="#testing">User test</a></li>
+                <ul>
+                    <li><a href="#metodologia">Metodologia & obiettivi</a></li>
+                    <li><a href="#reclutamento">Target & reclutamento</a></li>
+                    <li><a href="#script">Script</a></li>
+                    <li><a href="#risultati">Risultati del test</a></li>
+                </ul>
+            </ol>
+        </div>
+
+        <a href="#index" id="to-index">
+            <img src="images/icon-toIndex.svg" alt="Torna all'indice">
+        </a>
+
+        <div class="content">
+            <div id="discovery">
+                <div class="inline">
+                    <img src="images/1-green.svg" alt="">
+                    <h2>Fase di discovery</h2>
+                </div>
+
+                <div id="descrizione-sito">
+                    <h3>a. Descrizione del sito</h3>
+                    <p>Il focus del sito web è <strong>informativo</strong>, perchè il servizio effettivo è erogato unicamente tramite applicazione mobile.
+                    Offre quindi informazioni riguardo l'azienda, i suoi valori e servizi, aspetti legali, servizi di supporto all'utilizzo dell'app e un blog.</p>
+                </div>
+    
+                <div id="analisi">
+                    <h3>b. Analisi as is</h3>
+                    <p>Ho iniziato con un'analisi as is del sito attuale utilizzando le <strong>10 euristiche di usabilità di Jackob Nielsen</strong>, cosi da individuare i requisiti di usabilità, i punti di forza e di debolezza del sito.
+                    <h4>Risultati</h4>    
+                    Ho riscontrato problemi di coerenza e la possibilità di implementare diverse funzionalità per migliorare la navigazione complessiva e la fruizione del sito. Altri interventi possono riguardare la riorganizzazione dei contenuti, così da renderli meno distribuiti e subito visivamente più chiari, ma di questo aspetto per il momento ho scelto di non occuparmene.</p>
+                    <h4>Sitemap</h4>
+                    <p>Per completare l'analisi as is, ho mappato l'architettura dell'informazione del sito attuale</p>
+                    <img src="images/Sitemap-1.png" alt="Mappa dei contenuti del sito attuale" class="full-page">
+                </div>
+
+                <div id="competitors">
+                    <h3>c. Analisi dei competitors</h3>
+                    <p>I concorrenti diretti dell'azienda sono tutte le applicazioni di meditazione in commercio in lingua inglese. Ho individuato alcuni dei principali competitors: InsightTimer, Calm, Headspace, Ten percent happier, Unplug e Simple habits. L'obiettivo era fare un <strong>benchmark</strong> con altre realtà per comprendere le loro scelte, la progettazione dei loro siti, così da valutare come essi hanno risolto determinati problemi e in cosa invece Buddhify si distingue.</p>
+                    
+                    <h4>Tabella di analisi dei competitors:</h4>
+                    <img src="images/competitors1.png" alt="Tabella di analisi dei competitors" class="full-page">
+                    <img src="images/competitors2.png" alt="Tabella di analisi dei competitors" class="full-page">
+
+                    <h4>Risultati:</h4>
+                    <p>Sono emerse alcune possibili implementazioni del sito:
+                        <ul>
+                            <li><strong>Accorpamento delle categorie informative</strong> sull'azienda: about us, why we're different, our team e our manifesto</li>
+                            <li>Creazione di una <strong>pagina di contatto</strong>, con la presenza di una form così da facilitare il contatto con l'azienda in caso di problematiche</li>
+                            <li>Implementazione di una <strong>barra di ricerca</strong> all'interno della pagina di supporto</li>
+                            <li><strong>Organizzazione dei link del footer</strong> per favorire la navigazione del sito</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div id="target">
+                    <h3>d. Analisi del target</h3>
+                    <h4>Target del prodotto</h4>
+                    <p>Ho prima individuato il target del prodotto, raccogliendo anche testimonianze dai social e dal blog. É emerso che gli utilizzatori sono:
+                        <ul>
+                            <li>Persone a cui piace medirare o piacerebbe imparare, ma non sanno da dove partire</li>
+                            <li>Persone tra i <strong>20 e i 40 anni</strong></li>
+                            <li>A <strong>maggioranza femminile</strong>, ma gli uomini non mancano</li>
+                            <li><strong>Lavoratori</strong>, ma ci sono anche studenti</li>
+                            <li>Alcuni sono genitori che vogliono condividere i momenti di meditazione con i propri figli</li>
+                            <li>Persone che utilizzano l'applicazione per sopprerire allo stress e all'ansia lavorativa, alcuni per gestire stati emotivi difficili, altri per calmarsi e rilassarsi, altri per acquisire più autostima e stabilità nella vita e chi per dormire meglio </li>
+                            <li>Persone con una buona comprensione della <strong>lingua inglese</strong></li>
+                        </ul>
+                    <br>
+
+                    <h4>Target del sito</h4>
+                    <p>Il target del sito invece, non è detto che comprenda per forza gli utenti dell'applicazione. É diretto a persone che:</p>
+                    <ul>
+                        <li>si vogliono informare sull'azienda,</li>
+                        <li>si vogliono informare sull'applicazione,</li>
+                        <li>necessitano di supporto nell'utilizzo dell'applicazione per dubbi o problemi tecnici,</li>
+                        <li>si vogliono informare sui post dell'azienda o vogliono condividere le proprie storie.</li>
+                    </ul>
+                    <br><br>
+
+                    <p>Ho poi proseguito con un <strong>questionario</strong> per validare il target e le abitudini di meditazione e alcune preferenze di navigazione.  
+                    I risultati confermano i criteri del target che già avevo individuato e forniscono un utile spunto di implementazione. All'interno del questionario ho inserito un quesito per determinare le preferenze del target in caso di problemi con l'applicazioni. Le possibilità di scelta erano tra: Form di contatto, pagina di supporto, email e numero di telefono. I risultati maggiori riguardavano i primi due. 
+                    </p>
+                </div>
+
+                <div id="personas">
+                    <h3>e. Personas & user journey</h3>
+                    <p>Sulla base dei dati emersi dall'analisi del target e dal questionario ho definito le <strong>personas</strong>. Per ognuno ho individuato i bisogni, aspettative, ipotizzato uno scenario e mappato il percorso nel sito attuale, <strong>user journey</strong>, individuando le criticità riscontrate e le opportunità di miglioramento del sito.</p>
+                    <br><br>
+                    <!--Emily-->
+                    <h4>1) Emily</h4>
+                    <div class="persona">
+                        <div class="persona-info" style="background-color: #D2BFD9;">
+                            <img src="images/emily.png" alt="Primo piano di Emily" class="foto-persona">
+                            <p class="persona-name">Emily</p>
+                                <strong>Età:</strong> 24 <br>
+                                <strong>Status:</strong> Single <br>
+                                <strong>Città:</strong> Miami <br>
+                                <strong>Professione:</strong> Giornalista <br>
+                                <strong>Livello tecnologico:</strong> Alto <br>
+                                 
+                                <div class="persona-social">
+                                    <strong>Social:</strong>
+                                    <img src="images/fb.png" alt="facebook">
+                                    <img src="images/insta.png" alt="instagram">
+                                    <img src="images/twitter.png" alt="twitter">
+                                    <img src="images/link.png" alt="linkedin">
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="persona-content" style="background-color: #EDE6F0;">
+                            <p>
+                                <strong>Bio:</strong> Emily è una ragazza ambiziosa e molto socievole. Fa la giornalista per una rivista femminile. È da sempre appassionata della meditazione, non c’è giorno che salta. Aveva iniziato per imparare a gestire l’ansia quando ancora era una studentessa, ma anche una volta risolto il problema, ha continuato a praticare. Non vede l’ora di raccogliere competenze tali da poter diventare una freelance <br><br>
+
+                                <strong>Motto:</strong> <i>”Mi piace condividere le mie esperienze e i miei hobby con le altre persone”</i> <br><br>
+
+                                <strong>Scenario:</strong> La rivista per cui lavora le ha dato la possibilità di scrivere un’articolo a piacere e le è venuto in mente di condividere la sua passione per la meditazione, facendo una recensione di Buddhify<br><br>
+
+                                <strong>Goals:</strong>
+                                <ul>
+                                    <li>Raccogliere informazioni sull'azienda</li>
+                                    <li>Trovare il logo dell'azienda</li>
+                                </ul><br>
+
+                                <strong>Frustrazioni:</strong>
+                                <ul>
+                                    <li>Spera di trovare sul sito le informazioni necessarie a poter scrivere il suo articolo</li>
+                                </ul><br>
+                            </p>
+                        </div>   
+                    </div>
+                    <img src="images/journey-emily-1.jpg" alt="user journey Emily" class="full-page">
+
+                    
+
+                    <!--Alex-->
+                    <h4>2) Alex</h4>
+                    <div class="persona">
+                        <div class="persona-info" style="background-color: #B2EBF2;">
+                            <img src="images/alex.png" alt="Primo piano di Alex" class="foto-persona">
+                            <p class="persona-name">Alex</p>
+                                <strong>Età:</strong> 31 <br>
+                                <strong>Status:</strong> Fidanzato <br>
+                                <strong>Città:</strong> Berlino <br>
+                                <strong>Professione:</strong> Manager <br>
+                                <strong>Livello tecnologico:</strong> Medio <br>
+                                 
+                                <div class="persona-social">
+                                    <strong>Social:</strong>
+                                    <img src="images/fb.png" alt="facebook">
+                                    <img src="images/link.png" alt="linkedin">
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="persona-content" style="background-color: #E1F9FD;">
+                            <p>
+                                <strong>Bio:</strong> Alex è un uomo dinamico. Lavora come manager per una grossa azienda ed è spesso soggetto a stress per le troppe responsabilità e i viaggi per lavoro. Da qualche anno si è scaricato sul suo smartphone Android l’applicazione di Buddhify. Gli piace molto meditare mentre torna a casa, lo aiuta a rilassarsi e abbandonare lo stress della giornata lavorativa, cosi da godersi la vita privata in tranquillità.
+                                <br><br>
+
+                                <strong>Motto:</strong> <i>”Medito per dissociarmi dal lavoro e vivere sereno la mia vita privata”</i> <br><br>
+
+                                <strong>Scenario:</strong> Ha sempre utilizzato l’app su un dispositivo Android, ma ha da poco cambiato telefono passando ad un iPhone e vorrebbe capire se può scaricare l’app senza pagarla di nuovo<br><br>
+
+                                <strong>Goals:</strong>
+                                <ul>
+                                    <li>Continuare ad utilizzare Buddhify sul suo nuovo telefono</li>
+                                </ul><br>
+
+                                <strong>Frustrazioni:</strong>
+                                <ul>
+                                    <li>Ha paura di dover riacquistare l’applicazione</li>
+                                </ul><br>
+                            </p>
+                        </div>   
+                    </div>
+                    <img src="images/journey-alex-1.jpg" alt="user journey Alex" class="full-page">
+
+
+
+                    <!--Abby-->
+                    <h4>3) Abby</h4>
+                    <div class="persona">
+                        <div class="persona-info" style="background-color: #FDE8AF;">
+                            <img src="images/abby.png" alt="Primo piano di Abby" class="foto-persona">
+                            <p class="persona-name">Abby</p>
+                                <strong>Età:</strong> 35 <br>
+                                <strong>Status:</strong> Sposata <br>
+                                <strong>Città:</strong> Londra <br>
+                                <strong>Professione:</strong> Mamma & impiegata <br>
+                                <strong>Livello tecnologico:</strong> Medio <br>
+                                 
+                                <div class="persona-social">
+                                    <strong>Social:</strong>
+                                    <img src="images/fb.png" alt="facebook">
+                                    <img src="images/insta.png" alt="instagram">
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="persona-content" style="background-color: #FEF7DD;">
+                            <p>
+                                <strong>Bio:</strong> É una donna tranquilla e piena di risorse. Madre di 2 bambini, adora giocare con loro e godersi la loro compagnia. Da qualche mese anche il più piccolo è entrato all’asilo e lei ha ricominciato a lavorare come commessa in un negozio di abbigliamento. Adora la sua vita ma ultimamente è un po’ troppo frenetica. Ogni tanto le piace prendersi una serata di tranquillità, per uscire con le amiche.
+                                 <br><br>
+
+                                <strong>Motto:</strong> <i>”Amo la mia vita, ma la tranquillità è come un miraggio”</i> <br><br>
+
+                                <strong>Scenario:</strong> Durante l’ultima uscita con le amiche, Abby ha raccontato di aver bisogno di un po’ di tranquillità. Una delle sue amiche le consiglia Buddhify, dicendole che la utilizza anche con i suoi figli. Abby è colpita, si segna il nome dell’app e quando torna a casa decide di fare qualche ricerca online
+                                <br><br>
+
+                                <strong>Goals:</strong>
+                                <ul>
+                                    <li>Avere qualche momento di tranquillità nell’arco della giornata Trovare il logo dell’azienda</li>
+                                </ul><br>
+
+                                <strong>Frustrazioni:</strong>
+                                <ul>
+                                    <li>Ha volte ha paura di non riuscire a gestire tutto quanto</li>
+                                    <li>Non vuole togliere del tempo ai figli, sa che cresceranno in fretta e che ogni momento è prezioso</li>
+                                </ul><br>
+                            </p>
+                        </div>   
+                    </div>
+                    <img src="images/journey-abby-1.jpg" alt="user journey Abby" class="full-page">
+                </div>
+
+                <div id="soluzioni">
+                    <h3>f. Implementazioni</h3>
+
+                    <p>Tra la fase di analisi del sito e le user journey sono emersi le seguenti possibilità di implementazione:</p>
+                    
+                    <ol>
+                        <li><strong>Rimosso il menù ad hamburger</strong> per la visualizzazione da desktop. La visualizzazione da tablet e da mobile lo comprende ancora, ma con la nuova configurazione.</li>
+                        <li>La pagina <strong>“Support”</strong> è stata aggiunta alla barra di navigazione/menù ad hamburger ➡️ la barra di navigazione/menù ad hamburger comprende quindi: “About us” , “The app”, “Membership”, “Blog”, “Support”. Il restante delle pagine compare unicamente nel footer</li>
+                        <li>Il <strong>footer</strong> è stato <strong>riorganizzato</strong> in 4 categorie di contenuti:
+                            <ul>
+                                <li><b>Buddhify</b> che comprende: “The app”, “Membership” e “Blog”</li>
+                                <li><b>About us</b> che comprende: “Why we’re different”, “Our story”, “Our people”, “Our manifesto”</li>
+                                <li><b>Help</b> che comprende: “Support”, “Contact us” e “Press kit”</li>
+                                <li><b>Legals</b> che comprende: “Terms of use” e “Privacy policy"</li>
+                            </ul>
+                            
+                        <li>È stata inserita la pagina <strong>“Contact us”</strong> che comprende una form di contatto con nome, motivo di contatto (scelto tramite finestra dropdown e che indirizza l’utente in automatico alla mail giusta) e campo di testo. La pagina inoltre comprende il numero di telefono, una FAQ con le domande più frequenti e i link alle pagine “Support” e “Press kit” ➡️ tutti i link alle mail presenti nel sito sono sostituiti dal link alla pagina di contatto.</li>
+                        <li>La pagina “Brand assets” diventa una pagina di navigazione di 2 livello, collegata alla pagina di primo livello “Press kit”</li>
+                        <li>I link <strong>“Buddhify for iOS” e “Buddhify for Android”</strong> nel footer sono sostituiti dagli appositi button</li>
+                        <li>È stato inserito un <strong>pulsante di risalita rapida</strong> nelle pagine con più testo (come “The app”, le sue sottopagine, ecc.)</li>
+                        <li>Gli articoli all’interno delle sottopagine di supporto non sono più presentati come un elenco di articoli, ma saranno presenti come  <strong>accordion</strong>, cosi da essere subito interagibili</li>
+                    </ol>
+
+                    <h4>Nuova sitemap</h4>
+                    <img src="images/Sitemap-3.png" alt="sitemap del sito una volta implementate le varie funzioni" class="full-page">
+
+                </div>
+            </div>
+
+            <div id="wireframe">
+                <div class="inline">
+                    <img src="images/2-green.svg" alt="">
+                    <h2>Wireframing</h2>
+                </div>
+                <p>I wireframe sono stati realizzati su Figma. Ho rappresentato tutte le parti interattive ora o in una versione definitiva in azzurro. Le interazioni possibili sono basiche, saranno poi curate di più in fase di prototype.
+                </p>
+                <br>
+                <p>Le pagine di cui mi sono occupata sono:
+                <ul>
+                    <li>Home</li>
+                    <li>Why we're different</li>
+                    <li>Support di 1° livello</li>
+                    <li>Support di 2° livello</li>
+                    <li>Contact</li>
+                </ul>
+                </p>
+
+                <div class="col" style="border-top: 1px solid black;">
+                    <div class="col-child">
+                        <h4>Versione mobile</h4>
+                        <p>La versione mobile è stata studiata per un Iphone x dalle dimensioni di 375x812. È stato progettato su una griglia di 4 colonne con 16px di margine per lato e un gutter di 16px. Ci sono alcune variazioni per quanto riguarda il menù, il footer e la pagina di supporto </p>
+                        <a href="https://www.figma.com/proto/xuU9J44e1rucnV4AexnQBn/Buddhify?page-id=0%3A1&node-id=1%3A1068&viewport=463%2C1227%2C0.29&scaling=scale-down&starting-point-node-id=1%3A1068" target="_blank"><button type="button" target="'_blank"  class="btn-secondary-red" >Vai ai wireframe</button></a>
+                    </div>
+                    <div class="col-child">
+                        <h4>Versione desktop</h4>
+                        <p>La versione da desktop è stata studiata per dimensioni di schermo di 1280x800. È stato progettato su una griglia di 12 colonne con 100px di margine per lato e un gutter di 32px. Ci sono alcune variazioni per quanto riguarda il menù, il footer e la pagina di supporto</p>
+                        <a href="https://www.figma.com/proto/xuU9J44e1rucnV4AexnQBn/Buddhify?page-id=1%3A3092&node-id=1%3A3636&viewport=672%2C484%2C0.23&scaling=min-zoom&starting-point-node-id=1%3A3636" target="_blank"><button type="button" target="'_blank"  class="btn-secondary-red" >Vai ai wireframe</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prototype">
+                <div class="inline">
+                    <img src="images/3-green.svg" alt="">
+                    <h2>Prototype</h2>
+                </div>
+                    <p>I wireframe sono stati ora prototipati. Prima di tutto mi sono occupata di definire la nuova estetica del sito web, ho optato per uno stile che favorisse 
+                        <ul>
+                            <li><i>divertimento</i> e <i>gioia</i>, dato dalla moltitudine di colori, scelti per la palette,</li>
+                            <li><i>serenità</i> e <i>tranquillità</i>.</li>
+                        </ul>
+                    </p>
+                    <br>   
+                    
+                    <div id="palette">
+                        <h3>a. Palette</h3>
+                        <p>La palette è stata sviluppata a partire dal logo, che comprende una moltitudine di colori cosi da conferire energia e allegria al brand.
+                        <br>
+                        Ho deciso di mantenere l'identità proponendo una palette di colori che rispetti gli <strong>standard del contrasto per l'accessibilità</strong> almeno di tipo <strong>AA</strong>.
+                        </p>
+
+                        <div class="palette">
+                            <div id="pal" class="pal-inline">
+                                <div class="color" style="background-color: #BF3D20; color: white;"><p>#BF3D20</p></div>
+                                <div class="color" style="background-color: #E86748; border: 2px solid black;"><p>#E86748</p></div>
+                                <div class="color" style="background-color: #F0A591"><p>#F0A591</p></div>
+                                <div class="color" style="background-color: #F6C8BC"><p>#F6C8BC</p></div>
+                            </div>
+        
+                            <div id="pal" class="pal-inline">
+                                <div class="color" style="background-color: #7BCB79; border: 2px solid black;"><p>#7BCB79</p></div>
+                                <div class="color" style="background-color: #A1D9A0;"><p>#A1D9A0</p></div>
+                                <div class="color" style="background-color: #C6E8C5"><p>#C6E8C5</p></div>
+                            </div>
+        
+                            <div id="pal" class="pal-inline">
+                                <div class="color" style="background-color: #00828F; color: white;"><p>#00828F</p></div>
+                                <div class="color" style="background-color: #00BDD4; border: 2px solid black;"><p>#00BDD4</p></div>
+                                <div class="color" style="background-color: #80DEEA"><p>#80DEEA</p></div>
+                                <div class="color" style="background-color: #B2EBF2"><p>#B2EBF2</p></div>
+                            </div>
+        
+                            <div id="pal" class="pal-inline">
+                                <div class="color" style="background-color: #FFCF42; border: 2px solid black;"><p>#FFCF42</p></div>
+                                <div class="color" style="background-color: #FFDC7A;"><p>#FFDC7A</p></div>
+                                <div class="color" style="background-color: #FFEAAF"><p>#FFEAAF</p></div>
+                            </div>
+        
+                            <div id="pal" class="pal-inline">
+                                <div class="color" style="background-color: #865A90; border: 2px solid black;"><p>#865A90</p></div>
+                                <div class="color" style="background-color: #B798BE;"><p>#B798BE</p></div>
+                                <div class="color" style="background-color: #D3C0D8"><p>#D3C0D8</p></div>
+                            </div>
+
+                            <div id="pal" class="pal-inline">
+                                <div class="color" style="background-color: #222222; color: white;"><p>#222222</p></div>
+                                <div class="color" style="background-color: #B00020;"><p>#B00020</p></div>
+                                <div class="color" style="background-color: #FFFFFF"><p>#FFFFFF</p></div>
+                            </div>
+                        </div>
+                        <p>*P.S. I colori con il bordo nero sono i colori di base da cui sono state ricavate le sfumature</p>
+                    </div>
+
+                    <div id="tipografia">
+                        <h3>b. Tipografia</h3>
+
+                    <div class="font">
+                        <img src="images/tavola-poppins.svg" style="width:30%" alt="">
+                        <p class="weight-font">Light, Extralight, Italic, Regular, Medium, Semibold, Bold</p>
+                    </div>
+                    <p>Come carattere tipografico ho optato per <b>Poppins</b>, font dalle linee tondeggianti cosi da suscitare un senso di <i>calma</i> e <i>benessere</i>.</p>
+                    </div>
+
+                    <div id="prototipi">
+                        <h3>c. Prototipi</h3>
+                        <div class="col">
+                            <div class="col-child">
+                                <h4>Versione mobile</h4>
+                                <p>La versione mobile è stata studiata per un Iphone x dalle dimensioni di 375x812.</p>
+                                <a href="https://evhtkg.axshare.com" target="_blank"><button type="button" target="'_blank"  class="btn-secondary-red" >Vai al prototipo</button></a>
+                            </div>
+                            <div class="col-child">
+                                <h4>Versione desktop</h4>
+                                <p>La versione da desktop è stata studiata per dimensioni di schermo di 1280x800.</p>
+                                <a href="https://xktyrm.axshare.com" target="_blank"><button type="button" target="'_blank"  class="btn-secondary-red" >Vai al prototipo</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+
+            <div id="testing">
+                <div class="inline">
+                    <img src="images/4-green.svg" alt="">
+                    <h2>User testing</h2>
+                </div>
+                <p>L'ultimo step del progetto riguarda il test del prototipo con l'utente</p>
+
+                <div id="metodologia">
+                    <h3>a. Metodologia & obiettivi</h3>
+                    <p>Ho scelto come metodologia un <strong>test di usabilità moderato a distanza</strong>, da svolgere sul prototipo mobile dato che secondo il <em>Digital 2021: Global overview report</em> circa il 55,7% della navigazione totale è effettuata da dispositivo mobile. </p>
+                    <h4>Obiettivi del test</h4>
+                    <p>Basandomi sullo scopo del sito e sulle mie implementazioni, gli obiettivi del test, in ordine di importanza, saranno i seguenti:</p>
+                    <ol>
+                        <li>Testare la nuova <strong>pagina di contatto</strong>, dal pdv funzionale e visuale</li>
+                        <li>Testare le <strong>pagine di supporto</strong> e nello specifico la fruizione degli articoli di supporto implementati tramite accordion</li>
+                        <li>Valutare la fruibilità e la nuova estetica delle <strong>pagine descrittive</strong> e l'attrattività della <strong>home</strong></li>
+                    </ol>   
+                </div>
+
+                <div id="reclutamento">
+                    <h3>b. Target & reclutamento</h3>
+                    
+                    <h4>Target</h4>
+                    <p>Una volta decisa la modalità di test, ho provveduto a ridefinire il target. I requisiti sono:</p>
+                    <ul>
+                        <li>tra i 20 e i 40 anni</li>
+                        <li>principalmente donne</li>
+                        <li>svolgono la meditazione</li>
+                        <li>esperienza tecnologica di tutti i livelli</li>
+                        <li>conoscenza della lingua inglese</li>
+                    </ul>
+                    <p>I requisiti del target non sono troppo restrittivi, lo scopo è avere una diversità di utenti a cui sottoporre il test,c osi da comprendere come gli utenti più disparati utilizzano e percepisocno le modifiche apportate al sito.</p>
+
+                    <h4>Recruiting</h4>
+                    <p>Ho deciso di effettuare il test su <strong>5 utenti</strong>, perchè con questo numero di tester si possono scoprire l'85% dei problemi di usabilità più gravi.
+                    <br>
+                    Pensavo di optare per un <strong>reclutamento dai social media</strong>, magari da gruppi Facebook, scegliendo persone che praticano la meditazione anche in altre piattaforme o in autonomia. Per accertarmi che i candidati rispettino i requisiti, somministrerei un <strong>questionario online di screeening</strong>
+                    </p>
+                </div>
+
+                <div id="script">
+                    <h3>c. Script</h3>
+                    <p>Il giorno del test inizio con il presentarmi, introdurre all'utente cosa dovrà fare e chiedendogli di <strong>pensare a voce alta</strong> durante lo svolgimento del test. Preciso subito che essendo un prototipo non tutte le funzionalità sono interagibili. Subito dopo inizio con lo svolgimento effettivo del test, somministrandogli uno per volta gli scenari e i task via chat.
+                    
+                    <br><br>
+                    <h4>Scenario 1:</h4> Sei un utente dell’applicazione Buddhify. Hai da poco cambiato cellulare, passando da un dispositivo Android a uno iOS (Apple). Stai cercando di scaricare l'applicazione sul nuovo dispositivo ma hai visto che ti viene chiesto di effettuare il pagamento. Trovi strano dover pagare di nuovo, così decidi di approfondire. 
+                    <br><br>
+                    <strong>Task 1 - </strong>Apri la pagina di supporto <br>
+                    <strong>Task 1b - </strong>Leggi l'articolo "How can I add Buddhify to multiple devices" <br><br>
+                    <strong>Task 2 - </strong>Contatta l'azienda <br>
+                    <strong>Task 2b - </strong>Completa il modulo di contatto e invialo 
+                    
+                    <br><br>
+                    <p class="postscriptum">*P.S. Da precisare che presentando lo scenario inizialmente, lascio l'utente libero di procedere. L'utente ha 2 posssibilità di muoversi: tramite la pagina di contatto (task 2) o tramite le pagine di support (task 1). L'ordine dei task è interscambiabile, quindi li somministro a seconda della scelta dell'utente e provvedo poi, solo in un secondo momento, a guidarlo sulla seconda possibilità.</p>
+                    <br>
+                    
+                    <h4>Scenario 2:</h4> Ti chiedo ora di navigare liberamente un paio di pagine, senza fare click. Descrivi però gli elementi che vedi man mano. A cosa possono servire? Per cosa e quando li useresti? Cosa pensi succeda al click?
+                     
+                    <br><br>
+                    <p class="postscriptum">*P.S. Durante la fase di testing pongo <strong>domande di follow up</strong>  per raccogliere informazioni di mio interesse sulle sue abitudini, preferenze, ecc.. a seconda delle situazioni e dei task.</p>
+                    <br><br>
+                    
+                    Una volta completato il test porrei le ultime domande di follow up per poi procedere con la somministrazione di un breve questionario che comprende <strong>survey quantitative sia NPS che SUS</strong>.
+                    </p>
+
+                </div>
+
+                <div id="risultati">
+                    <h3>d. Risultati del test</h3>
+                    <p>Questa fase del progetto è ancora in elaborazione</p>
+                </div>
+            </div>  
+            
+            </div>
+        </div>
+
+        <div class="richiamo">
+            <p style="margin-bottom: 8px">Vuoi approfondire?</p>
+            <a href="images/Progetto Buddhify.pdf" target="_blank"><button type="button" class="btn-secondary-red" >Progetto completo</button></a>
+        </div>
+        
+
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" ><img src="images/facebook.png" alt="logo Facebook" onmouseover="this.src='images/facebookH.png';" onmouseout="this.src='images/facebook.png';" class="icon-social"></a>
+                <a href="https://www.instagram.com/eleanor_dici/" class="social" ><img src="images/instagram.png" alt="logo Instagram" onmouseover="this.src='images/instagramH.png';" onmouseout="this.src='images/instagram.png';" class="icon-social"></a>
+                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" ><img src="images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='images/linkedinH.png';" onmouseout="this.src='images/linkedin.png';" class="icon-social"></a>
+                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" ><img src="images/github.svg" alt="logo GitHub" onmouseover="this.src='images/githubH.svg';" onmouseout="this.src='images/github.svg';" class="icon-social"></a>
+            </div>
+            Copyright © 2022 | Eleonora Di Cianni
+        </footer>
+
+    </body>
+
+</html>

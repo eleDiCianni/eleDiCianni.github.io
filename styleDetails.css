@@ -1,0 +1,706 @@
+
+
+/*SECTION : BREADCRUMB*/
+
+    .breadcrumbLink:link, .breadcrumbLink:visited{
+        color: #247B87;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .breadcrumbLink:hover {
+        color: #7CB0B7;
+    }
+
+    .logoAziendale {
+        width: 500px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 48px;
+
+    }
+
+/*SECTION : PANORAMICA*/
+
+    .panoramica {
+        background-color: #bdd7db; 
+    }
+
+    .panoramica-content {
+        padding-bottom: 24px;
+        border-bottom: 1px solid black;
+        margin-bottom: 24px;
+    }
+
+    .panoramica-content ul {
+        padding-left: 32px;
+    }
+
+    .panoramica-content p {
+        padding-left: 16px;
+    }
+
+/*SECTION : TO INDEX*/
+
+    #to-index {
+        width: fit-content;
+        height: fit-content;
+        display: none;
+        position: fixed;
+        z-index: 2;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    #to-index img {
+        width: 64px;
+        height: auto;
+    }
+
+/*SECTION : INDICE*/
+
+    .indice {
+        display: block;
+        margin: 48px;
+        background-color: #B8859E;
+        width: fit-content;
+        border-radius: 16px;
+    }
+
+    .indice-title {
+        padding: 16px 0 8px 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        border: 4px solid #B8859E;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
+    .indice-title h5 {
+        display: inline;
+        padding: 8px;
+    }
+
+    .indice a:link, .indice a:visited {
+        color: black;
+        font-weight: 500;
+    }
+
+    .indice li {
+        padding-bottom: 4px;
+    }
+
+    .indice ol{
+        list-style: decimal;
+        color: black;
+        padding: 24px 48px 24px 48px;
+    }
+
+    .indice ul{
+        list-style: lower-alpha;
+        color: black;
+        padding-left: 48px;
+    }
+
+/*inline*/
+
+    .inline {
+        margin: 16px 0;
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inline img {
+        width: 40px;
+        height: auto;
+        margin-right: 16px;
+    }
+
+    .inline-sub {
+        margin: 16px 0;
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inline-sub img {
+        width: 32px;
+        height: auto;
+        margin-right: 16px;
+        margin-left: 32px;
+    }
+
+/*images dimension*/
+
+    .full-page {
+        width: 95%;
+        margin: 24px auto 40px auto;
+        display: block;
+    }
+
+    .half-page {
+        width: 50%;
+        height: auto;
+        margin: 24px auto 40px auto;
+        display: block;
+    }
+
+/*SECTION : CONTENT*/
+
+    .content ul, .content ol {
+        margin-left: 32px;
+        line-height: 1.5;
+    }
+
+/*SECTION : personas*/
+
+    .persona {
+        display: flex;
+    }
+
+    .persona-info {
+        padding: 16px;
+        text-align: center;
+    }
+
+    .persona-social img{
+        width: 24px;
+        height: auto;
+        display: inline;
+    }
+
+    .persona-name {
+        font-size: 2.5em;
+        font-weight: 600;
+        width: fit-content;
+        padding: 8px;
+        border-bottom: 1px solid black;
+        margin: 0 auto 24px auto;
+    }
+
+    .persona-content {
+        padding: 16px;
+    }
+
+    #personas div {
+        margin-bottom: 16px;
+    }
+
+    #personas .full-page {
+        margin-bottom: 88px;
+    }
+
+    #soluzioni ol{
+        line-height: 1.6em;
+    }
+
+/*col*/  
+
+    .col-child p{
+        padding: 8px 0 24px 0;
+    }
+
+/*SECTION : palette*/
+
+    .palette {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pal-inline {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .color {
+        text-align: center;
+        color: black;
+        border-radius: 16px;
+        font-weight: lighter;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+/*SECTION : tipografia*/
+
+    .font {
+        text-align: center;
+    }
+
+    .weigth-font {
+        flex-wrap: wrap;
+        font-weight: 300;
+    }
+
+
+/*SUNNEE*/
+
+    #black-white > div {
+        flex-direction: column;
+        padding: 24px;
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    #logo-intero {
+        width: 100%;
+        height: auto;
+        padding-bottom: 16px;
+    }
+
+    #icon-logo {
+        width: 30%;
+        height: auto;
+        margin: auto;
+    }
+
+/*SECTION : set icon*/
+
+    .set-icon {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 16px 5% 0 5%;
+    }
+
+    .icons-inline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icons-inline img {
+        width: 10%;
+    }
+
+/*SECTION : social*/
+
+    .post-social {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .post-social img {
+        width: 200px;
+        padding: 0 16px;
+    }
+
+/*SECTION : RICHIAMO*/
+
+    .richiamo {
+        background-color: #dbc2cf;
+        padding: 32px 0;
+        text-align: center;
+    }
+
+
+/*ARTICOLO SU PARITA GENERE*/
+
+/*SECTION : description*/
+
+    dfn {
+        display: block;
+        background-color: #e9f2f3;
+        padding: 16px;
+        margin: 16px auto;
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
+    .content a {
+        color: #88335e;
+        text-decoration: underline 2px #88335e;
+    }  
+
+    cite {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 0.9em;
+    }
+
+    .blockquote {
+        margin: 8px auto;
+    }
+
+    
+
+
+
+ /*----------------------------versione MOBILE---------------------------*/
+@media screen and (max-width: 736px){
+
+    /*SECTION : CONTENT*/
+
+        .content {
+            margin: 64px 16px;
+        }
+
+        .content h3{
+            margin-bottom: 8px;
+        }
+
+        .content h4{
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .content > div {
+            margin-top: 64px;
+        }
+
+        .content div {
+            margin-bottom: 24px;
+        }
+
+    /* --- */
+
+        .breadcrumb {
+            padding: 100px 16px 40px 16px;
+        }
+        
+        .logoAziendale {
+            width: 70%;
+            margin-bottom: 64px;
+        }
+
+    /*SECTION : PANORAMICA*/
+
+        .panoramica {
+            padding: 32px 16px 48px 16px;
+            border-bottom-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .panoramica h2 {
+            padding-top: 16px;
+            padding-bottom: 8px;
+        }
+
+        #to-index {
+            width: 48px;
+            height: auto;
+            bottom: 16px;
+            right: 16px;
+        }
+
+
+    /*SECTION : INDICE*/
+
+        .indice {
+            display: block;
+            text-align: center;
+            width: 90%;
+            margin: 32px auto;
+        }
+
+        .indice ol{
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        .indice ul{
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        .full-page {
+            margin: 16px auto 24px auto;
+        }
+
+
+
+    /*BUDDHIFY*/
+
+    /*SECTION : personas*/
+
+        .persona {
+            flex-direction: column;
+        }
+
+        .foto-persona {
+            width: 40%;
+            height: auto;
+            display: block;
+            margin: auto;
+            margin-bottom: 16px;
+        }
+
+    /*SECTION : wireframe, prototype*/
+    
+        .col-child {
+            width: 90%;
+            padding: 4px 8px;
+        }
+
+    /*SECTION : RICHIAMO */
+
+        .richiamo {
+            padding: 24px 0;
+        }
+    
+
+
+    /*ARTICOLO SU PARITA GENERE*/
+
+    /*SECTION : description*/
+
+        .article-description {
+            margin: 32px 16px;
+        }
+
+        .article-description p:last-of-type {
+            float: right;
+        }
+
+}
+
+
+
+
+ /*----------------------------versione TABLET---------------------------*/
+@media screen and (min-width: 736px){
+
+    /*SECTION : CONTENT*/
+
+        .content {
+            margin: 100px 32px;
+        }
+
+        .content > div {
+            margin-top: 120px;
+        }
+
+
+        .content h3{
+            margin-bottom: 24px;
+        }
+        
+        .content h4{
+            margin-bottom: 8px;
+            margin-top: 40px;
+        }
+
+    /* --- */
+
+        .breadcrumb {
+            padding: 100px 32px 64px 32px;
+        }
+
+    /*SECTION : PANORAMICA*/
+
+        .panoramica {
+            padding: 24px 32px 54px 32px;
+            border-bottom-left-radius: 80px;
+            border-top-right-radius: 80px;
+        }
+
+        .panoramica h2 {
+            margin-top: 24px;
+        }
+
+        .panoramica-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 16px auto 24px auto;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            padding-bottom: 24px;
+            border-bottom: 1px solid black;
+        }
+
+        .panoramica-content > div{
+            width: 45%;
+        }
+
+    /*SECTION : INDICE*/
+
+        .indice { 
+            margin: 48px auto;
+            background-color: #B8859E;
+            border-radius: 16px;
+            width: 90%; 
+        }
+
+        .indice ol {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 330px;
+        }
+
+
+
+    /*BUDDHIFY*/
+
+    /*SECTION : personas*/
+
+        .persona {
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+        .persona div {
+            margin-top: 0;
+        }
+        
+        .foto-persona {
+            width: 60%;
+            height: auto;
+            margin-bottom: 24px;
+        }
+
+    /*SECTION : wireframe, prototype*/
+
+        .col {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 16px 0;
+        }
+        
+        .col-child {
+            width: 48%;
+            padding: 0 16px;
+        }
+
+    /*SECTION : palette*/
+
+        .palette {
+            margin-top: 64px;
+        }
+
+        .color {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+        }
+
+
+
+    /*SUNNEE*/
+
+        #black-white {
+            display: flex;
+            flex-direction: row;
+            margin-top: 16px;
+        }
+
+        #logo-intero {
+            padding-bottom: 24px;
+        }
+
+        #icon-logo {
+            width: 40%;
+        }
+
+        .post-social {
+            margin: 8px 0 40px 0;
+            border: 1px solid;
+        }
+
+        .post-social img {
+            width: 300px;
+        }
+
+
+
+    /*ARTICOLO SU PARITA GENERE*/
+
+    /*SECTION : description*/
+
+        .article-description {
+            margin: 24px 32px;
+        }
+
+        .article-description p {
+            display: inline;
+        }
+        
+        .article-description p:last-of-type {
+            float: right;
+        }
+}
+
+
+
+
+ /*----------------------------versione DESKTOP---------------------------*/
+@media screen and (min-width: 1280px){
+
+    /*SECTION : CONTENT*/
+
+        .content {
+            margin: 100px 48px;
+        }
+
+    /* --- */
+
+    /*SECTION : bradcrumbs*/
+        
+        .breadcrumb {
+            padding: 100px 48px 64px 48px;
+        }
+
+    /*SECTION : PANORAMICA*/
+
+        .panoramica {
+            padding: 32px 48px 64px 48px;
+            border-bottom-left-radius: 120px;
+            border-top-right-radius: 120px;
+        }
+
+        .panoramica-content > div{
+            width: 45%; 
+        }
+
+    /*SECTION : RICHIAMO*/
+
+        .richiamo {
+            padding: 64px 0;
+        }
+        
+        .richiamo p {
+            padding-bottom: 8px;
+        }
+
+    
+    /*SUNNEE*/
+
+        #black-white > div {
+            padding: 40px;
+        }
+
+        .post-social img {
+            width: 400px;
+        }
+
+    
+
+    /*ARTICOLO SU PARITA GENERE*/
+
+    /*SECTION : description*/
+
+        .article-description {
+            margin: 32px 48px;
+        }
+
+
+}

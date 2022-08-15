@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Situazione femminile</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleDetails.css">   
+        <script type="text/javascript" src="script.js "></script>
+
+        <script>
+            // btn turn to index
+
+            window.onscroll = function() { 
+                if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                    document.getElementById("to-index").style.display = "block"
+                } else {
+                    document.getElementById("to-index").style.display = "none"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="home.html" id="logo" >ELEONORA DI CIANNI</a>
+            <a id="icon-hamburger" onclick="openMenu()" ><img  src="images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
+            <a id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
+            
+            <ul id="menu">
+                <li><a href="home.html#about-me">About me</a></li>
+                <li id="dropdown"><a onclick="openDropdown()" class="fake-link">Portfolio <img id="icon-dropdown" src="images/open-menu.svg" alt="icona per il menu dropdown"></a> 
+                    <ul id="portfolio-menu">
+                        <li><a href="brand.html">Brand identity</a></li>
+                        <li><a href="copy.html">Copywriting</a></li>
+                        <li><a href="uxui.html">UX/UI design</a></li>
+                    </ul>
+                </li>
+                <li><a href="home.html#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <div class="breadcrumb">
+            <a href="copy.html" class="breadcrumbLink">Copywriting</a><span> > </span><a href="articleWoman.html" class="breadcrumbLink"> Italia 2021. La donna è ancora considerata un oggetto? </a>
+        </div>
+    
+        <div class="panoramica">
+            <h2>Panoramica</h2>
+                
+            <div class="panoramica-content">
+                    
+                <div>
+                    <h3>Il mio ruolo:</h3>
+                    <p>Realizzare un articolo per un blog su uno dei 17 obiettivi dell'Onu. In particolare ho scelto il quinto: la parità di genere</p>
+                </div>
+
+                <div>
+                    <h3>Strumenti utilizzati:</h3>
+                    <ul>
+                        <li><strong>Adobe XD: </strong> per simulare l'estetica di un blog</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <p style="margin-bottom: 8px">Per approfondire la motivazione e gli aspetti tecnici usati per l'articolo clicca qui</p>
+                <a href="images/Presentazione.pdf" target="_blank"><button type="button" class="btn-secondary-green" >Vedi il progetto</button></a>
+
+            </div>
+        </div>
+
+
+        
+        <div class="content">
+
+        <h1 style="margin-bottom: -1em;">ITALIA 2021. LA DONNA È ANCORA CONSIDERATA UN OGGETTO?</h1>
+
+        <div class="article-description">
+            <p>Eleonora Di Cianni, 21 Settembre 2021</p>
+            <p><img src="images/icon-timer.svg" alt=""> 13 min</p>
+        </div>
+
+        <img src="images/equality.jpg" alt="" class="full-page">
+
+            <p> Crescere come femmina nel 2021 non è ancora molto allettante. Fin da piccola sei abituata ad avere
+                addosso il doppio dell’ansia dei genitori, in quanto “sei la figlia femmina”. Devi stare attenta quando esci e
+                cercare di stare sempre in gruppo, perchè sei più a rischio. Non puoi ancora liberamente decidere come
+                vestirti e stare al 100% serena, perchè ci sono sempre sguardi che ti spogliano con gli occhi e commenti
+                non richiesti, ma questo è il minore dei rischi. C’è sempre la possibilità di essere definita “tr**a”
+                semplicemente perchè sei donna e mi fermo qui. <br><br>
+                Si, se non si è capito sono una ragazza e come tale sono soggetta a tutte queste cose, ma penso che tutte
+                possano capirmi, vero? Il brutto è che molte uomini a sentir parlare di femminismo, ancora alzano gli occhi
+                al cielo. <br>
+                Con questo articolo mi propongo di cercare di far capire, parlando anche di esperienze personali o di
+                ragazze che conosco, come ci si sente ad essere donna nel 2021.</p>
+        </div>
+
+        <div class="indice" id="index">
+            <div class="indice-title" >
+                <img src="images/icon-index.svg" alt="indice">
+                <h5>INDICE DEI CONTENUTI</h5>
+            </div>
+            <ol style="height: fit-content;">
+                <li><a href="#storia">Parentesi storica</a></li>
+                <li><a href="#attualita">Situazione attuale</a></li>
+                <li><a href="#oggetto">Oggettificazione del corpo femminile</a></li>
+                <li><a href="#fenomeni">Slut-shaming e revenge porn</a></li>
+                <li><a href="#catcalling">Catcalling</a></li>
+                <li><a href="#molestie">Molestie minori</a></li>
+                <li><a href="#Riflessioni">Riflessioni</a></li>
+            </ol>
+        </div>
+
+        <a href="#index" id="to-index">
+            <img src="images/icon-toIndex.svg" alt="Torna all'indice">
+        </a>
+
+        <div class="content">
+            
+            <div id="storia">
+
+                <div class="inline">
+                    <img src="images/1-green.svg" alt="">
+                    <h2>Parentesi storica</h2>
+                </div>
+
+                <p>Permettetemi una breve parentesi storica. L’Italia è stata fin da sempre soggetta a una <strong>società</strong> di tipo <strong>patriarcale</strong>, che la <cite>Treccani</cite> definisce come un </p> 
+                <dfn> " tipo di sistema sociale in cui vige il 'diritto paterno', ossia il controllo esclusivo dell'autorità domestica, pubblica e politica da parte dei maschi più anziani del gruppo " </dfn>
+                <p>Non starò qui ad approfondire questo tema, ma molto interessante a riguardo, è <a href="https://ibicocca.unimib.it/perche-abbiamo-un-problema-di-genere/">“Perchè abbiamo un problema di genere”</a>, un articolo scritto da una ragazza dell’università Bicocca di Milano, in cui analizza com’è nato questo sistema, le ripercussioni sulla donna e nella storia. <br><br>
+                
+                Per spiegare perché ho accennato a questo fenomeno citerò una frase del suo articolo :</p> <blockquote> " L’esistenza di un’ideologia patriarcale secolare ha implicato il radicamento di un’impostazione maschilista e misogina della realtà che si mescola costantemente con la nostra prassi quotidiana " </blockquote>
+
+                <p>Insomma, la donna non è considerata come una persona con desideri, diritti e volontà, ma come un oggetto che passa di proprietà dal padre al marito. <br><br>
+                Solo con un susseguirsi di eventi storici che partono dalla Rivoluzione francese, passando ai movimenti femministi delle donne inglesi, la rivoluzione industriale, fino ad arrivare alle guerre mondiali, che la donna inizia a battersi per essere riconosciuta come una persona con diritti e possibilità pari all’uomo. Per approfondire questo percorso vi lascio un link ad un articolo su <a href="https://www.studenti.it/femminismo-tra-ottocento-e-novecento-emmeline-pankhurst-e-le-suffragette.html">studenti.it</a> </p>
+
+                <img src="images/equalRight.jpg" alt="" class="half-page">
+
+                <p>In Italia il diritto di voto venne riconosciuto solo nel 1948. Negli anni seguenti le donne continuarono a lottare per tutta una serie di diritti:
+                    <ul>
+                        <li> Dal 1963 al 1999 la possibilità di entrare in Magistratura, nel corpo di Polizia e infine nelle Forze Armate</li>
+                        <li> 1970 riconosciuto il divorzio</li>
+                        <li> 1975 il diritto di famiglia, con il riconoscimento anche dei figli nati al di fuori del matrimonio</li>
+                        <li> 1978 diritto all'aborto</li>
+                        <li> 2013 sono regolamentati i provvedimenti penali da attribuire alla violenza di genere nei confronti delle donne, come lo stalking e i maltrattamenti</li>
+                        <li>2019 il revenge porn è riconosciuto come reato</li>
+                    </ul>
+                    <br>
+                Tutto ciò è già un bel passo in avanti, ma il processo di parità di genere non è ancora concluso.
+                </p>
+            </div>
+
+            <div id="attualita">
+                
+                <div class="inline">
+                    <img src="images/2-green.svg" alt="">
+                    <h2>Situazione attuale</h2>
+                </div>
+
+                <p>Il forum economico mondiale dal 2006 fornisce il Global Gender Gap, un quadro che mostra il divario di genere, attualmente in 156 stati. Gli ambiti presi in esame sono 4: </p>
+
+                <ul>
+                    <li>politica</li>
+                    <li>economica</li>
+                    <li>educazione</li>
+                    <li>salute</li>
+                </ul> <br>
+                
+                <p><b>L'Italia</b> si aggira tra la 70° (2018) e la <strong>63°</strong>(2021) <strong>posizione</strong> nella classifica globale generale, collocandosi agli ultimi posti in ambito europeo. Le stime per il raggiungimento della parità di genere ammontavano a 99.5 anni. La <strong>pandemia</strong> ha avuto però conseguenze inaspettate, allungando il periodo fino a 135,6 anni. <cite>- Fonte: il Sole 24 ore</cite> <br>
+                Anche le condizioni a livello nazionale sono degenerate nel 2020 in cui è stato registrato un grosso calo fino alla 76° posizione, da cui ci siamo già ripresi. Perché questo brusco calo?</p> <br>
+                
+                <ol>
+                    <li>Perchè il periodo di covid ha portato un incremento della violenza sulle donne: 71,9% le richieste di aiuto in più al <strong>1522 (numero anti-violenza e stalking)</strong> tra marzo e ottobre 2020, rispetto allo stesso periodo nell’anno. <cite>- Fonte: Sky tg24</cite></li>
+                    <li>Tanti i posti di lavoro che le donne sono state costrette ad abbandonare e/o l' aumento delle ore da dedicare alla casa e ai figli durante la situazione emergenziale</li>
+                </ol> <br>
+
+                <p>Altre situazioni critiche di cui bisogna tener contro negli ultimi anni sono:</p>
+                <ul>
+                    <li>Stipendi non equi (circa il 5% nel 2017) e posizioni lavorative importanti occupate principalmente da uomini (nel 2019 solo il 28% delle donne occupava la posizione di manager) <cite>- Fonte: Istat</cite></li>
+
+                    <img src="images/equalPay.jpeg" alt="" class="half-page">
+
+                    <li>Revenge porn: secondo i dati diffusi dalla Polizia, nel 2020 ci sono stati circa 718 casi di diffusione illecita di immaginio video “sessualmente espliciti”, con l’81% di vittime di sesso femminile ( circa 2 vittime al giorno ) <cite>- Fonte: la Repubblica</cite></li>
+                    <li>Dall’inizio del 2021 ci sono già stati 83 casi di femminicidio <cite>- Fonte: il Messaggero</cite> </li>
+                </ul><br>
+
+                <p>Questi dati vogliono dare un quadro generale della situazione a livello nazionale, ma ora basta con i numeri. Ci sono altri argomenti su cui vorrei concentrarmi e che vorrei portare alla vostra attenzione.</p>
+
+            </div>
+
+            <div id="oggetto">
+                <div class="inline">
+                    <img src="images/3-green.svg" alt="">
+                    <h2>Oggettificazione del corpo femminile</h2>
+                </div>
+
+                <p>È risaputo che secondo canoni maschilisti e misogini, la donna ha un ruolo ben preciso nella società: è un <strong>oggetto</strong>, utile alla riproduzione e alla cura degli eredi, un corpo su cui sfogare i propri istinti e i propri desideri. Fortunatamente questa tendenza sta sfumando nel tempo. <br>
+                Attualmente alla donna è riconosciuta sia la possibilità di realizzarsi in ambito lavorativo, che avere una famiglia e un marito che la rispetti e la ritenga sua pari. In realtà spesso c’è ancora la tendenza a vedere la donna come la principale responsabile dei figli e della casa.</p>
+                
+                <div style="padding-bottom: 32px;">
+                    <img src="images/2021_mappa_corriere_donne.jpg" alt="" class="half-page">
+                    <cite style="float: right;">- Fonte: Corriere della Sera</cite>
+                </div>
+                
+
+                <p>Anche la tendenza a vedere la donna come un oggetto non è ancora completamente svanita. Nel 2019 l’Università di Trento è riuscita a dimostrare <strong>l’oggettificazione del corpo della donna</strong>. Gli studiosi hanno mostrato un oggetto prima in mezzo ad un gruppo di donne e poi in un gruppo di uomini, misurando l’attività cerebrale con un elettroencefalogramma. È emerso che l’oggetto risulta meno visibile quando è in un contesto di donne in intimo o in bikini. Per approfondire meglio lascio il link all’articolo pubblicato dal <a href="https://www.giornaletrentino.it/cronaca/trento/una-donna-in-bikini-vista-come-un-oggetto-1.1992128">giornaletrentino.it.</a> Questo fenomeno avviene a livello inconscio sia nell'uomo che nella donna. <br><br>
+                L’articolo prosegue con un commento del professore firmatario Jeroen Vaes, <blockquote>“crescere e vivere in una società che giudica prevalentemente le donne per come appaiono innesca insicurezza sul proprio aspetto fisico e, nel tempo, un maggior rischio di sviluppare disturbi alimentari e disfunzioni sessuali”.</blockquote> </p><br>
+                <p>Se a queste considerazioni uniamo il <strong>body shaming</strong>, ovvero </p>
+                <dfn> " la tendenza a commentare sui social network, in modo negativo, la forma fisica delle persone, in particolare delle donne " </dfn>
+                <p>il rischio di fare sentire una donna inadatta e "spingerla verso un comportamento alimentare scorretto" è ormai alto. L'articolo di Focus <a href="https://www.focus.it/scienza/salute/rischi-da-body-shaming-insulti-social-sulla-forma-fisica-a-1-donna-su-2"> "Rischi da 'body shaming', insulti social sulla forma fisica a 1 donna su 2"</a> sensibilizza appunto su questo argomento, offrendo anche dei suggerimenti per i soggetti a rischio. </p>
+
+            </div>
+
+            <div id="fenomeni">
+                <div class="inline">
+                    <img src="images/4-green.svg" alt="">
+                    <h2>Slut-shaming e revenge porn</h2>
+                </div>
+
+                <p>Non è insolito prima o poi, già in giovane età, sentirsi definire “tr**a” o “put***a” da qualcuno. Il fatto più preoccupante è che spesso siamo noi stesse ragazze a definirci tali. In generale a mio parere, i motivi possono essere i più vari: un senso di inferiorità, il modo di vestirsi, cambiare più partner, lo slut-shaming, ecc. <br>
+                Per chi non lo sapesse lo <strong>slut-shaming</strong>, di cui io stessa ho sentito parlare solo da poco, è secondo <cite>Wikipedia:</cite> </p>
+
+                <dfn> " un neologismo nato in ambito filosofico femminista per definire l'atto di far sentire una donna colpevole o inferiore per determinati comportamenti o desideri sessuali che si discostino dalle aspettative di genere tradizionali o ortodosse, o che possano essere considerati contrari alla regola naturale o soprannaturale/religiosa. " </dfn>
+
+                <p>Risulta ancora in parte diffusa, l’idea che la donna debba sottostare ad un canone di purezza e chiunque se ne dissoci viene classificata come una poco di buono, attaccata e criticata per i suoi desideri sessuali. <br><br>
+                Vittime di questo fenomeno, sono ad esempio le donne soggette a <strong>revenge porn</strong> che la <cite>Treccani</cite> definisce come:</p>
+
+                <dfn> " pornografia della vendetta, quella pratica di pubblicare in rete materiale imbarazzante come un video hard fatto in casa, oppure un’immagine dell’ex nuda. Tutto senza il consenso dell’interessata, spesso condividendo anche nome, indirizzo o riferimenti che facciano capire chi è lei " </dfn>
+
+                <p>Alcuni di questi contenuti finiscono su <cite>Telegram</cite>, dove è stato dimostrato nello scorso 2020 da un’inchiesta  di <cite>Wired.it</cite>, l’esistenza di un network con oltre 43 mila iscritti in due mesi, 21 canali tematici collegati e un volume di conversazioni che si aggira sui 30mila messaggi al giorno. Le foto, che spaziano dal revenge porn alla pedo-pornografia, sono scambiate come merce, riportandoci quindi al concetto del genere femminile come oggetto. </p>
+                
+            </div>
+
+            <div id="catcalling">
+                <div class="inline">
+                    <img src="images/5-green.svg" alt="">
+                    <h2>Catcalling</h2>
+                </div>
+
+                <p>Passiamo ad un altro tema caldo degli ultimi tempi: il catcalling. Sarà capitato a tutte che mentre camminiamo per strada, che sia giorno, pomeriggio o sera, ci sentiamo addosso sguardi, sentiamo fischiare, battute, complimenti, insomma di tutto di più. I più coraggiosi oseranno incolparci per come ci vestiamo, ma non sanno invece che molti episodi, si verificano anche quando indossiamo tute giganti che non lasciano trasparire nemmeno l’ombra di una forma del corpo. <br>
+                In ogni caso non si può essere giudicate per come ci vestiamo, non si può dare la colpa di una molestia alla vittima per come questa si è vestita. Si parla in questo caso di <strong>victim blaming</strong> che sempre <cite>Wikipedia</cite> lo definisce come:</p>
+
+                <dfn>La colpevolizzazione della vittima consiste nel ritenere la vittima di un crimine o di altre sventure parzialmente o interamente responsabile di ciò che le è accaduto e spesso nell'indurre la vittima stessa ad autocolpevolizzarsi</dfn>
+                
+                <p>La società italiana fa spesso così. Negli episodi sopra elencati: femminicidio, revenge porn e catcalling, si finisce spesso per colpevolizzare la vittima e in qualche modo cercare di spiegare e dare un senso al comportamento del carnefice. <br>
+                Un video che espone e denuncia tutti questi fatti è quello pubblicato da Chiara Ferragni di cui vi lascio il <a href="https://www.instagram.com/tv/CH0e9v6qqPy/?utm_medium=copy_link">link</a>.</p>
+
+            </div>
+
+            <div id="molestie">
+                <div class="inline">
+                    <img src="images/6-green.svg" alt="">
+                    <h2>Molestie minori</h2>
+                </div>
+
+                <p>Per molti, probabilmente, gli argomenti fino ad ora trattati sembrano troppo lontani, impedendogli di rendersi conto di quanto in realtà siano diffusi. Proviamo quindi a parlare di temi minori, ma sicuramente più vicini. <br><br>
+                Mi rivolgo a voi uomini, visto che la gran maggioranza delle donne avrà provato ciò che sto per dire in prima persona. Provate a chiedere alle vostre ragazze, sorelle, amiche e perchè no anche alle vostre madri. Provate a chieder loro se camminando per strada sono mai state seguite. Chiedete se in metropolitana, bus, treno, c’è mai stato qualcuno che sfruttando la scusa dell’affollamento, si sfrega, le palpa e in alcuni casi è arrivato addirittura a masturbarsi oppure, se quando indossa la gonna, le è capitato che le facesse una foto da sotto. <br><br>
+                Sembra fantascienza invece è attualità.</p>
+            </div>
+
+            <div id="riflessioni">
+                <div class="inline">
+                    <img src="images/7-green.svg" alt="">
+                    <h2>Riflessioni</h2>
+                </div>
+
+                <p>Essere una donna in Italia nel 2021 non è ancora molto semplice. In questo articolo mi sono limitata ad accennare vari episodi e/o crimini, di cui ogni giorno si sente parlare. <br>
+                Ho affrontato i temi in realtà in modo molto superficiale, per poter presentare la situazione generale, tralasciando moltissimi altri aspetti che andrebbero discussi. <br><br>
+                L’obiettivo dell’articolo è anche quello di riportare casi minori, piccole molestie, che buona parte del mondo femminile subisce. <br><br>
+                Bisognerebbe rendersi conto dell’impatto delle proprie parole e/o azioni. Il mio modesto suggerimento è quello di imparare a trattare le donne, anche quelle a voi lontane, come quelle che fanno parte della vostra vita e a cui tenete. </p>
+                
+                <h4 style="text-align: center;">Quindi, “La donna è ancora considerata un oggetto nel 2021?” La risposta la lascio a voi.</h4>
+
+                <p>E ricorda...</p>
+                <img src="images/manQuality.jpg" alt="" class="half-page">
+            </div>
+
+        </div>
+
+        <div class="richiamo">
+            <p style="margin-bottom: 8px">Vuoi approfondire la motivazione e gli aspetti tecnici usati per l'articolo?</p>
+            <a href="images/Presentazione.pdf" target="_blank"><button type="button" class="btn-secondary-red" >Vedi il progetto</button></a>
+        </div>
+        
+
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" ><img src="images/facebook.png" alt="logo Facebook" onmouseover="this.src='images/facebookH.png';" onmouseout="this.src='images/facebook.png';" class="icon-social"></a>
+                <a href="https://www.instagram.com/eleanor_dici/" class="social" ><img src="images/instagram.png" alt="logo Instagram" onmouseover="this.src='images/instagramH.png';" onmouseout="this.src='images/instagram.png';" class="icon-social"></a>
+                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" ><img src="images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='images/linkedinH.png';" onmouseout="this.src='images/linkedin.png';" class="icon-social"></a>
+                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" ><img src="images/github.svg" alt="logo GitHub" onmouseover="this.src='images/githubH.svg';" onmouseout="this.src='images/github.svg';" class="icon-social"></a>
+            </div>
+            Copyright © 2022 | Eleonora Di Cianni
+        </footer>
+
+    </body>
+
+</html>

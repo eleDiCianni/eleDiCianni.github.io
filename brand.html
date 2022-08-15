@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brand identity</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js "></script>
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="home.html" id="logo" >ELEONORA DI CIANNI</a>
+            <a id="icon-hamburger" onclick="openMenu()" ><img  src="images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
+            <a id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
+            
+            <ul id="menu">
+                <li><a href="home.html#about-me">About me</a></li>
+                <li id="dropdown"><a onclick="openDropdown()" class="fake-link">Portfolio <img id="icon-dropdown" src="images/open-menu.svg" alt="icona per il menu dropdown"></a> 
+                    <ul id="portfolio-menu">
+                        <li><a href="brand.html">Brand identity</a></li>
+                        <li><a href="copy.html">Copywriting</a></li>
+                        <li><a href="uxui.html">UX/UI design</a></li>
+                    </ul>
+                </li>
+                <li><a href="home.html#contact-me">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <div class="title-bar">
+            <h1>Brand design</h1>
+        </div>
+        
+
+        <div class="project-intro">
+            <img src="images/sunnee.svg" class="project-image" alt="Logo del brand: Sunnee">
+            <div class="project-content">
+                <h2>Sunnee</h2>
+                <p>Sunnee è un brand fittizio di beachwear attento all'inquinamento dei mari. Partendo dal nome ed un piccolo brief, per loro mi sono occupata del: 
+                <ul>
+                    <li>logo,</li>
+                    <li>scelta della palette di colori,</li>
+                    <li>tipografia,</li>
+                    <li>design di un set di icone,</li>
+                    <li>impostazione di una strategia social.</li>
+                </ul>
+                </p>
+                <button type="button" onclick="location.pathname='sunnee.html'" class="btn-secondary-red">Scopri Sunnee</button>
+            </div>
+        </div>
+
+        <div class="project-intro" style="background-color: #E9F2F3;">
+            <img src="images/logo.png" class="project-image"  alt="Immagine di copertina ipotetica ">
+            <div class="project-content">
+                <h2>Da definire</h2>
+                <p>Il brand è in lavorazione... Torna tra qualche tempo per vedere i risultati! </p>
+                <button type="button" class="btn-secondary-disable">Scopri il progetto</button>
+            </div>
+        </div>
+
+
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" ><img src="images/facebook.png" alt="logo Facebook" onmouseover="this.src='images/facebookH.png';" onmouseout="this.src='images/facebook.png';" class="icon-social"></a>
+                <a href="https://www.instagram.com/eleanor_dici/" class="social" ><img src="images/instagram.png" alt="logo Instagram" onmouseover="this.src='images/instagramH.png';" onmouseout="this.src='images/instagram.png';" class="icon-social"></a>
+                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" ><img src="images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='images/linkedinH.png';" onmouseout="this.src='images/linkedin.png';" class="icon-social"></a>
+                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" ><img src="images/github.svg" alt="logo GitHub" onmouseover="this.src='images/githubH.svg';" onmouseout="this.src='images/github.svg';" class="icon-social"></a>
+            </div>
+            Copyright © 2022 | Eleonora Di Cianni
+        </footer>
+
+    </body>
+
+</html>
