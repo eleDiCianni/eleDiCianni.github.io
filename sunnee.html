@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sunnee branding</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="styleDetails.css">   
-        <script type="text/javascript" src="script.js "></script>
+        <title>Sunnee branding | Eleonora Di Cianni - UX/UI designer</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/styleDetails.css">   
+        <script type="text/javascript" src="assets/js/script.js" defer></script>
 
         <script>
             // btn turn to index
@@ -24,12 +24,12 @@
 
         <nav>
             <a href="index.html" id="logo" >ELEONORA DI CIANNI</a>
-            <a id="icon-hamburger" onclick="openMenu()" ><img  src="images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
-            <a id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
+            <a id="icon-hamburger" onclick="openMenu()" ><img  src="assets/images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
+            <a id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="assets/images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
             
             <ul id="menu">
                 <li><a href="index.html#about-me">About me</a></li>
-                <li id="dropdown"><a onclick="openDropdown()" class="fake-link">Portfolio <img id="icon-dropdown" src="images/open-menu.svg" alt="icona per il menu dropdown"></a> 
+                <li id="dropdown"><a onclick="openDropdown()" class="fake-link">Portfolio <img id="icon-dropdown" src="assets/images/open-menu.svg" alt="icona per il menu dropdown"></a> 
                     <ul id="portfolio-menu">
                         <li><a href="brand.html">Brand identity</a></li>
                         <li><a href="copy.html">Copywriting</a></li>
@@ -44,12 +44,12 @@
             <a href="brand.html" class="breadcrumbLink">Brand identity</a><span> > </span><a href="sunnee.html" class="breadcrumbLink"> Sunnee </a>
         </div>
     
-        <img src="images/sunnee.svg" class="logoAziendale" alt="logo Sunnee">
+        <img src="assets/images/sunnee.svg" class="company-logo" alt="logo Sunnee">
     
-        <div class="panoramica">
+        <div class="overview">
             <h2>Panoramica</h2>
                 
-            <div class="panoramica-content">
+            <div class="overview-content">
                 <div>
                     <h3>L'azienda:</h3>
                     <p>Sunnee è un brand di beachwear nato nel 2018. Produce costumi sostenibili realizzati con filati derivati da plastica riciclata, e che non contribuiscono al rilascio di microplastiche nel mare .</p>
@@ -70,33 +70,33 @@
 
             <div style="text-align: center;">
                 <p style="margin-bottom: 8px">Per vedere il progetto completo clicca qui</p>
-                <a href="images/Sunnee.pdf" target="_blank"><button type="button" class="btn-secondary-green" >Progetto completo</button></a>
+                <a href="assets/images/Sunnee.pdf" target="_blank" rel="noopener"><button type="button" class="btn-secondary-green" >Progetto completo</button></a>
 
             </div>
         </div>
 
-        <div class="indice" id="index">
-            <div class="indice-title" >
-                <img src="images/icon-index.svg" alt="indice">
+        <div class="index" id="index-anchor">
+            <div class="index-title" >
+                <img src="assets/images/icon-index.svg" alt="indice">
                 <h5>INDICE</h5>
             </div>
             <ol style="height: fit-content;">
-                <li><a href="#marchio">Marchio</a></li>
+                <li><a href="#brand-name">Marchio</a></li>
                 <li><a href="#palette">Palette</a></li>
-                <li><a href="#tipografia">Tipografia</a></li>
-                <li><a href="#icone">Icone</a></li>
+                <li><a href="#typography">Tipografia</a></li>
+                <li><a href="#icon">Icone</a></li>
                 <li><a href="#social">Grafiche social</a></li>
             </ol>
         </div>
 
-        <a href="#index" id="to-index">
-            <img src="images/icon-toIndex.svg" alt="Torna all'indice">
+        <a href="#index-anchor" id="to-index">
+            <img src="assets/images/icon-toIndex.svg" alt="Torna all'indice">
         </a>
 
         <div class="content">
-            <div id="marchio">
+            <div id="brand-name">
                 <h3>Il marchio</h3>
-                <img src="images/logoPayoff.svg" alt="logo completo Sunnee" class="full-page">
+                <img src="assets/images/logoPayoff.svg" alt="logo completo Sunnee" class="full-page" loading="lazy">
                 <p>Ho deciso di prediligere un approccio audace che dia subito visibilità, optando per un logo colorato e che non passa inosservato.
                     <ul>
                         <li><strong>Pittogramma:</strong> rimarca il legame con il mare attraverso la figura della conchiglia.</li>
@@ -108,12 +108,12 @@
                 <h4>Black & white</h4>
                 <div id="black-white">
                     <div>
-                        <img src="images/logo-black.svg" alt="logo versione black" id="logo-intero">
-                        <img src="images/logo-black-icon.svg" alt="logo versione black" id="icon-logo">
+                        <img src="assets/images/logo-black.svg" alt="logo versione black" id="full-logo" loading="lazy">
+                        <img src="assets/images/logo-black-icon.svg" alt="logo versione black" id="icon-logo" loading="lazy">
                     </div>
                     <div style="background-color: #393738">
-                        <img src="images/logo-white.svg" alt="logo versione white" id="logo-intero">
-                        <img src="images/logo-white-icon.svg" alt="logo versione white" id="icon-logo">
+                        <img src="assets/images/logo-white.svg" alt="logo versione white" id="full-logo" loading="lazy">
+                        <img src="assets/images/logo-white-icon.svg" alt="logo versione white" id="icon-logo" loading="lazy">
                     </div>  
                 </div>
                 
@@ -138,16 +138,16 @@
                 <p>Ho selezionato questa palette scegliendo come colore principale il giallo ocra, a richiamare il sole, la spiaggia e l'energia. Per dare più dinamicità ho affiancato un colore blu vagamente tendente al verde, che invece richiama il mare. Per completare la palette ho scelto un rosa, che richiama i tramonti e la felicità</p>
             </div>
 
-            <div id="tipografia">
+            <div id="typography">
                 <h3>Tipografia</h3>
                 
                 <div class="col" style="align-items: center; justify-content: space-around;">
                     <div class="font">
-                        <img src="images/tavola-omnes.svg" style="width: 60%;" alt="">
+                        <img src="assets/images/tavola-omnes.svg" style="width: 60%;" alt="" loading="lazy">
                         <p class="weight-font">Thin Italic, Light, Medium, Black italic </p>
                     </div>
                     <div class="font">
-                        <img src="images/tavola-p22.svg" style="width: 60%" alt="">
+                        <img src="assets/images/tavola-p22.svg" style="width: 60%" alt="" loading="lazy">
                         <p class="weight-font">Regular</p>
                     </div>
                 </div>
@@ -156,29 +156,29 @@
                
             </div>
 
-            <div id="icone">
+            <div id="icon">
                 <h3>Icone</h3>
                 
                 <div class="set-icon" style="margin-bottom: 0;">
                     <div class="icons-inline">
-                        <img src="images/icon-conc1.svg" alt="">
-                        <img src="images/icon-conc2.svg" alt="">
-                        <img src="images/icon-conc3.svg" alt="">
-                        <img src="images/icon-conc4.svg" alt="">
-                        <img src="images/icon-conc5.svg" alt="">
-                        <img src="images/icon-stella.svg" alt="">
+                        <img src="assets/images/icon-conc1.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-conc2.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-conc3.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-conc4.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-conc5.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-stella.svg" alt="" loading="lazy">
                     </div>
                 </div>
                 <p>Questo primo set è stato creato per un fine decorativo, richiamando il mare</p>
                 <div class="set-icon" style="margin-bottom: 0;">
                     <div class="icons-inline">
-                        <img src="images/icon-relax.svg" alt="">
-                        <img src="images/icon-active.svg" alt="">
-                        <img src="images/icon-extreme.svg" alt="">
-                        <img src="images/icon-cuore.svg" alt="">
-                        <img src="images/icon-carrello.svg" alt="">
-                        <img src="images/icon-man.svg" alt="">
-                        <img src="images/icon-woman.svg" style="height: 70%" alt="">
+                        <img src="assets/images/icon-relax.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-active.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-extreme.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-cuore.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-carrello.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-man.svg" alt="" loading="lazy">
+                        <img src="assets/images/icon-woman.svg" style="height: 70%" alt="" loading="lazy">
                     </div>
                 </div>
                 <p>Questo primo set è stato creato in un ottica di utilità, con funzionalità più mirate all'e-commerce</p>
@@ -190,42 +190,42 @@
                 <p>Ultima parte del progetto consisteva nel determinare una strategia social. In particolare erano da impostare il profilo aziendale di Facebook e YouTube e impostare le grafiche per 3 post su facebook e instagram</p>
 
                 <h4>Profilo Facebook</h4>
-                <img src="images/fb-cover.jpg" alt="" class="full-page">
+                <img src="assets/images/fb-cover.jpg" alt="" class="full-page" loading="lazy">
 
                 <h4>Profilo YouTube</h4>
-                <img src="images/youtube.jpg" alt="" class="full-page">
+                <img src="assets/images/youtube.jpg" alt="" class="full-page" loading="lazy">
 
                 <h4>Post social</h4>
                 <p>Il primo post doveva riguardare la <b>presentazione dell'azienda</b></p>
                 <div class="post-social">
-                    <img src="images/fb-azienda.jpg" alt="">
-                    <img src="images/insta-azienda.jpg" alt="">
+                    <img src="assets/images/fb-azienda.jpg" alt="" loading="lazy">
+                    <img src="assets/images/insta-azienda.jpg" alt="" loading="lazy">
                 </div>
                 <p>Il secondo post doveva riguardare la <b>un invito ad un evento</b>. Io ho scelto di creare un evento di raccolta plastica sulle spiagge italiane, cosi da dimostrare lo spirito attivo del brand nel voler fare la differenza </p>
                 <div class="post-social">
-                    <img src="images/fb-iniziativa.jpg" alt="">
-                    <img src="images/insta-iniziativa.jpg" alt="">
+                    <img src="assets/images/fb-iniziativa.jpg" alt="" loading="lazy">
+                    <img src="assets/images/insta-iniziativa.jpg" alt="" loading="lazy">
                 </div>
                 <p>Il primo post doveva riguardare la <b>presentazione di un servizio/prodotto</b></p>
                 <div class="post-social">
-                    <img src="images/fb-scarica.jpg" alt="">
-                    <img src="images/insta-scarica.jpg" alt="">
+                    <img src="assets/images/fb-scarica.jpg" alt="" loading="lazy">
+                    <img src="assets/images/insta-scarica.jpg" alt="" loading="lazy">
                 </div>
             </div>
         </div>
 
-        <div class="richiamo">
+        <div class="recall">
             <p style="margin-bottom: 8px">Vuoi approfondire?</p>
-            <a href="images/Sunnee.pdf" target="_blank"><button type="button" class="btn-secondary-red" >Progetto completo</button></a>
+            <a href="assets/images/Sunnee.pdf" target="_blank" rel="noopener"><button type="button" class="btn-secondary-red" >Progetto completo</button></a>
         </div>
         
 
         <footer>
             <div>
-                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" ><img src="images/facebook.png" alt="logo Facebook" onmouseover="this.src='images/facebookH.png';" onmouseout="this.src='images/facebook.png';" class="icon-social"></a>
-                <a href="https://www.instagram.com/eleanor_dici/" class="social" ><img src="images/instagram.png" alt="logo Instagram" onmouseover="this.src='images/instagramH.png';" onmouseout="this.src='images/instagram.png';" class="icon-social"></a>
-                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" ><img src="images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='images/linkedinH.png';" onmouseout="this.src='images/linkedin.png';" class="icon-social"></a>
-                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" ><img src="images/github.svg" alt="logo GitHub" onmouseover="this.src='images/githubH.svg';" onmouseout="this.src='images/github.svg';" class="icon-social"></a>
+                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" target="_blank" rel="noopener"><img src="assets/images/facebook.png" alt="logo Facebook" onmouseover="this.src='assets/images/facebookH.png';" onmouseout="this.src='assets/images/facebook.png';" class="icon-social"></a>
+                <a href="https://www.instagram.com/eleanor_dici/" class="social" target="_blank" rel="noopener"><img src="assets/images/instagram.png" alt="logo Instagram" onmouseover="this.src='assets/images/instagramH.png';" onmouseout="this.src='assets/images/instagram.png';" class="icon-social"></a>
+                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" target="_blank" rel="noopener"><img src="assets/images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='assets/images/linkedinH.png';" onmouseout="this.src='assets/images/linkedin.png';" class="icon-social"></a>
+                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" target="_blank" class="social" rel="noopener"><img src="assets/images/github.svg" alt="logo GitHub" onmouseover="this.src='assets/images/githubH.svg';" onmouseout="this.src='assets/images/github.svg';" class="icon-social"></a>
             </div>
             Copyright © 2022 | Eleonora Di Cianni
         </footer>

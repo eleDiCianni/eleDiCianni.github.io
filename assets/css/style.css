@@ -114,7 +114,7 @@ nav {
         background: #fff;
     }
 
-    #scurisci-image {
+    #dark-image {
         width: 100%;
         background: #393738ad;;
         position: absolute;
@@ -125,7 +125,7 @@ nav {
         color: black;
     }
 
-    #scurisci-image h1 {
+    #dark-image h1 {
         padding: 24px 0 8px 0;
         background-color: #7cb0b7b6;
         margin: 0;
@@ -136,7 +136,7 @@ nav {
         line-height: 1;
     }
 
-    #scurisci-image h4 {
+    #dark-image h4 {
         background-color: #7CB0B7b6;
         display: block;
         text-align: center;
@@ -321,7 +321,7 @@ nav {
 
 /*messaggio di conferma*/
 
-    #successMessage {
+    #success-message {
         border: 3px solid #247B87;
         background-color: #e9f2f3;
         text-align: center;
@@ -336,17 +336,17 @@ nav {
         top: 25%;
     }
 
-    #successMessage img {
+    #success-message img {
         width: 20%;
         height: auto;
         margin: 24px;
     }
 
-    #successMessage button {
+    #success-message button {
         margin-top: 40px;
     }
 
-    #successMessage h4 {
+    #success-message h4 {
         margin: 8px auto;
     }
 
@@ -476,11 +476,11 @@ nav {
 
     /*SECTION : HERO*/
 
-        #scurisci-image h1 {
+        #dark-image h1 {
             padding: 16px 0 4px 0;
         }
 
-        #scurisci-image h4 {
+        #dark-image h4 {
             padding: 4px 0 16px 0 ;
         }
 
@@ -505,7 +505,7 @@ nav {
             height: 200px;
         }
 
-        #successMessage {
+        #success-message {
             width: 80%;
             left: 10%;
             top: 20%;
@@ -751,13 +751,13 @@ nav {
 
     /*successMessage*/;
 
-        #successMessage {
+        #success-message {
             position: relative;
             text-align: center;
             display: none;
         }
 
-        #successMessage a {
+        #success-message a {
             text-align: center;
             text-decoration: underline;
             color: black;  

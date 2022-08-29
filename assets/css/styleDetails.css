@@ -12,7 +12,7 @@
         color: #7CB0B7;
     }
 
-    .logoAziendale {
+    .company-logo {
         width: 500px;
         text-align: center;
         display: block;
@@ -23,21 +23,21 @@
 
 /*SECTION : PANORAMICA*/
 
-    .panoramica {
+    .overview {
         background-color: #bdd7db; 
     }
 
-    .panoramica-content {
+    .overview-content {
         padding-bottom: 24px;
         border-bottom: 1px solid black;
         margin-bottom: 24px;
     }
 
-    .panoramica-content ul {
+    .overview-content ul {
         padding-left: 32px;
     }
 
-    .panoramica-content p {
+    .overview-content p {
         padding-left: 16px;
     }
 
@@ -60,7 +60,7 @@
 
 /*SECTION : INDICE*/
 
-    .indice {
+    .index {
         display: block;
         margin: 48px;
         background-color: #B8859E;
@@ -68,7 +68,7 @@
         border-radius: 16px;
     }
 
-    .indice-title {
+    .index-title {
         padding: 16px 0 8px 24px;
         display: flex;
         flex-direction: row;
@@ -79,27 +79,27 @@
         border-top-right-radius: 16px;
     }
 
-    .indice-title h5 {
+    .index-title h5 {
         display: inline;
         padding: 8px;
     }
 
-    .indice a:link, .indice a:visited {
+    .index a:link, .index a:visited {
         color: black;
         font-weight: 500;
     }
 
-    .indice li {
+    .index li {
         padding-bottom: 4px;
     }
 
-    .indice ol{
+    .index ol{
         list-style: decimal;
         color: black;
         padding: 24px 48px 24px 48px;
     }
 
-    .indice ul{
+    .index ul{
         list-style: lower-alpha;
         color: black;
         padding-left: 48px;
@@ -160,22 +160,22 @@
 
 /*SECTION : personas*/
 
-    .persona {
+    .person {
         display: flex;
     }
 
-    .persona-info {
+    .person-info {
         padding: 16px;
         text-align: center;
     }
 
-    .persona-social img{
+    .person-social img{
         width: 24px;
         height: auto;
         display: inline;
     }
 
-    .persona-name {
+    .person-name {
         font-size: 2.5em;
         font-weight: 600;
         width: fit-content;
@@ -184,7 +184,7 @@
         margin: 0 auto 24px auto;
     }
 
-    .persona-content {
+    .person-content {
         padding: 16px;
     }
 
@@ -252,7 +252,7 @@
         text-align: center;
     }
 
-    #logo-intero {
+    #full-logo {
         width: 100%;
         height: auto;
         padding-bottom: 16px;
@@ -304,7 +304,7 @@
 
 /*SECTION : RICHIAMO*/
 
-    .richiamo {
+    .recall {
         background-color: #dbc2cf;
         padding: 32px 0;
         text-align: center;
@@ -374,20 +374,20 @@
             padding: 100px 16px 40px 16px;
         }
         
-        .logoAziendale {
+        .company-logo {
             width: 70%;
             margin-bottom: 64px;
         }
 
     /*SECTION : PANORAMICA*/
 
-        .panoramica {
+        .overview {
             padding: 32px 16px 48px 16px;
             border-bottom-left-radius: 40px;
             border-top-right-radius: 40px;
         }
 
-        .panoramica h2 {
+        .overview h2 {
             padding-top: 16px;
             padding-bottom: 8px;
         }
@@ -402,19 +402,19 @@
 
     /*SECTION : INDICE*/
 
-        .indice {
+        .index {
             display: block;
             text-align: center;
             width: 90%;
             margin: 32px auto;
         }
 
-        .indice ol{
+        .index ol{
             padding-left: 40px;
             text-align: left;
         }
 
-        .indice ul{
+        .index ul{
             padding-left: 40px;
             text-align: left;
         }
@@ -429,11 +429,11 @@
 
     /*SECTION : personas*/
 
-        .persona {
+        .person {
             flex-direction: column;
         }
 
-        .foto-persona {
+        .photo-person {
             width: 40%;
             height: auto;
             display: block;
@@ -450,7 +450,7 @@
 
     /*SECTION : RICHIAMO */
 
-        .richiamo {
+        .recall {
             padding: 24px 0;
         }
     
@@ -504,17 +504,17 @@
 
     /*SECTION : PANORAMICA*/
 
-        .panoramica {
+        .overview {
             padding: 24px 32px 54px 32px;
             border-bottom-left-radius: 80px;
             border-top-right-radius: 80px;
         }
 
-        .panoramica h2 {
+        .overview h2 {
             margin-top: 24px;
         }
 
-        .panoramica-content {
+        .overview-content {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -525,20 +525,20 @@
             border-bottom: 1px solid black;
         }
 
-        .panoramica-content > div{
+        .overview-content > div{
             width: 45%;
         }
 
     /*SECTION : INDICE*/
 
-        .indice { 
+        .index { 
             margin: 48px auto;
             background-color: #B8859E;
             border-radius: 16px;
             width: 90%; 
         }
 
-        .indice ol {
+        .index ol {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -552,16 +552,16 @@
 
     /*SECTION : personas*/
 
-        .persona {
+        .person {
             flex-direction: row;
             margin-top: 0;
         }
 
-        .persona div {
+        .person div {
             margin-top: 0;
         }
         
-        .foto-persona {
+        .photo-person {
             width: 60%;
             height: auto;
             margin-bottom: 24px;
@@ -603,7 +603,7 @@
             margin-top: 16px;
         }
 
-        #logo-intero {
+        #full-logo {
             padding-bottom: 24px;
         }
 
@@ -660,23 +660,23 @@
 
     /*SECTION : PANORAMICA*/
 
-        .panoramica {
+        .overview {
             padding: 32px 48px 64px 48px;
             border-bottom-left-radius: 120px;
             border-top-right-radius: 120px;
         }
 
-        .panoramica-content > div{
+        .overview-content > div{
             width: 45%; 
         }
 
     /*SECTION : RICHIAMO*/
 
-        .richiamo {
+        .recall {
             padding: 64px 0;
         }
         
-        .richiamo p {
+        .recall p {
             padding-bottom: 8px;
         }
 

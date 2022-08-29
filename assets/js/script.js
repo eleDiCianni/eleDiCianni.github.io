@@ -111,12 +111,12 @@ function textChange(field){
 }
 
 function closeMessage() {
-        document.getElementById("successMessage").style.display = "none"
+        document.getElementById("success-message").style.display = "none"
         document.getElementById("name").value = ''
         document.getElementById("email").value = ''
         document.getElementById("message").value = ''
 }
 
 function openMessage() {
-    document.getElementById("successMessage").style.display = "block"
+    document.getElementById("success-message").style.display = "block"
 }

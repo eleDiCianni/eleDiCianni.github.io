@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Eleonora Di Cianni</title>
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="script.js "></script>
+        <title>Home | Eleonora Di Cianni - UX/UI designer</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script type="text/javascript" src="assets/js/script.js" defer></script>
     </head>
 
     <body>
         <nav>
             <a href="index.html" id="logo">ELEONORA DI CIANNI</a>
-            <a  id="icon-hamburger" onclick="openMenu()" ><img  src="images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
-            <a  id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
+            <a  id="icon-hamburger" onclick="openMenu()" ><img  src="assets/images/icon-hamburger.svg" alt="icona per l'hamburger menu"></a>
+            <a  id="icon-close-hamburger" onclick="openMenu()" hidden><img  src="assets/images/icon-close-menu.svg" alt="icona per l'hamburger menu"></a>
             
             <ul id="menu">
                 <li><a href="#about-me">About me</a></li>
-                <li id="dropdown"><a href="#project" onclick="openDropdown()">Portfolio <img id="icon-dropdown" src="images/open-menu.svg" alt="icona per il menu dropdown"></a> 
+                <li id="dropdown"><a href="#project" onclick="openDropdown()">Portfolio <img id="icon-dropdown" src="assets/images/open-menu.svg" alt="icona per il menu dropdown"></a> 
                     <ul id="portfolio-menu">
                         <li><a href="brand.html">Brand identity</a></li>
                         <li><a href="copy.html">Copywriting</a></li>
@@ -26,17 +26,17 @@
         </nav>
         
         <div id="container-hero">
-            <img id="hero" src="images/hero.jpg" alt="">
-            <span id="scurisci-image">
+            <img id="hero" src="assets/images/hero.jpg" alt="">
+            <span id="dark-image">
                     <h1>ELEONORA DI CIANNI</h1>
                     <h4>Aspirante UX/UI designer</h4>
             </span>
         </div>
 
         <div id="about-me">
-            <h1>Riguardo me</h1>
+            <h2 style="text-align: center;">Riguardo me</h2>
             <div id="intro-me">
-                <img id="image-me" src="images/fotoProfilo.png" alt="">
+                <img id="image-me" src="assets/images/fotoProfilo.png" alt="">
                 <div>
                     <p> 
                         Ho 22 anni e sono di Milano. Ho un background in economia, ma ho lasciato quel percorso con la fine delle scuole superiori per buttarmi nel mondo del web design. <br> <br>
@@ -85,15 +85,15 @@
 		
         <div id="project">
             <div>
-                <a href="brand.html"><img src="images/brand.svg" id="brand" alt="link to the projects of brand identity"></a>
-                <a href="copy.html"><img src="images/copy.svg" id="copy" alt="link to the projects of copywriting"></a>
-                <a href="uxui.html"><img src="images/uiux.svg" id="uxui" alt="link to the projects of Ux/Ui design"></a>
+                <a href="brand.html"><img src="assets/images/brand.svg" id="brand" alt="link ai progetti di brand identity" loading="lazy"></a>
+                <a href="copy.html"><img src="assets/images/copy.svg" id="copy" alt="link ai progetti di copywriting" loading="lazy"></a>
+                <a href="uxui.html"><img src="assets/images/uiux.svg" id="uxui" alt="link ai progetti di Ux/Ui design" loading="lazy"></a>
             </div>
         </div>
 
         <div id="contact-me">
             <div id="form-section">
-                <h1>Contattami</h1>
+                <h2 style="text-align: center;">Contattami</h2>
                 <h4 style="text-align: center;">Vuoi metterti in contatto con me? Compila la seguente form </h4>
 
                 <form id="sendMessage" method="get">
@@ -123,8 +123,8 @@
                 </form>
             </div>
             
-            <dialogs id="successMessage">
-                <img src="images/icon-check.png" alt="" style="width: 20%;" >
+            <dialogs id="success-message">
+                <img src="assets/images/icon-check.png" alt="" style="width: 20%;" >
                 <h4>Il messaggio è stato mandato con successo! </h4>
                 <p>Grazie per avermi contattata. Risponderò al tuo messaggio il prima possibile ^^</p>
                 <button onclick="closeMessage()" class="btn-secondary-green">Chiudi</button>
@@ -133,10 +133,10 @@
 
         <footer>
             <div>
-                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" ><img src="images/facebook.png" alt="logo Facebook" onmouseover="this.src='images/facebookH.png';" onmouseout="this.src='images/facebook.png';" class="icon-social"></a>
-                <a href="https://www.instagram.com/eleanor_dici/" class="social" ><img src="images/instagram.png" alt="logo Instagram" onmouseover="this.src='images/instagramH.png';" onmouseout="this.src='images/instagram.png';" class="icon-social"></a>
-                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" ><img src="images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='images/linkedinH.png';" onmouseout="this.src='images/linkedin.png';" class="icon-social"></a>
-                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" ><img src="images/github.svg" alt="logo GitHub" onmouseover="this.src='images/githubH.svg';" onmouseout="this.src='images/github.svg';" class="icon-social"></a>                
+                <a href="https://www.facebook.com/eleonora.dicianni.3" class="social" target="_blank" rel="noopener"><img src="assets/images/facebook.png" alt="logo Facebook" onmouseover="this.src='assets/images/facebookH.png';" onmouseout="this.src='assets/images/facebook.png';" class="icon-social"></a>
+                <a href="https://www.instagram.com/eleanor_dici/" class="social" target="_blank" rel="noopener"><img src="assets/images/instagram.png" alt="logo Instagram" onmouseover="this.src='assets/images/instagramH.png';" onmouseout="this.src='assets/images/instagram.png';" class="icon-social"></a>
+                <a href="https://www.linkedin.com/in/eleonora-di-cianni" class="social" target="_blank" rel="noopener"><img src="assets/images/linkedin.png" alt="logo LinkedIn" onmouseover="this.src='assets/images/linkedinH.png';" onmouseout="this.src='assets/images/linkedin.png';" class="icon-social"></a>
+                <a href="https://github.com/eleDiCianni/start2impact-progetto-HTML.git" class="social" target="_blank" rel="noopener"><img src="assets/images/github.svg" alt="logo GitHub" onmouseover="this.src='assets/images/githubH.svg';" onmouseout="this.src='assets/images/github.svg';" class="icon-social"></a>                
             </div>
             Copyright © 2022 | Eleonora Di Cianni
         </footer>
